@@ -1,0 +1,6 @@
+<h1>User Component</h1>
+<p>Name:{{ user ? user.name.first : "" }}</p>
+<p>Email:{{ user ? user.email : "" }}</p>
+<p>Phone:{{ user ? user.phone : "" }}</p>
+<img src="{{ user ? user.picture.thumbnail : '' }}" />
+<button (click)="getRandomUser()">Get!</button>
